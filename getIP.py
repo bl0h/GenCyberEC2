@@ -6,7 +6,7 @@ def getID():
     idList = []
     instances = ec2.instances.filter(
         Filters=[{'Name': 'instance-state-name', 'Values': ['running']},
-                 {'Name': 'tag:Name', 'Values': ['GenCyber Student Camp']} ])
+                 {'Name': 'tag:Name', 'Values': ['GenCyber Wireshark/Autopsy']} ])
     for instance in instances:
         idList.append(instance.id)
     return idList

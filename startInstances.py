@@ -16,7 +16,7 @@ def startInstances(instances):
                 'ResourceType': 'instance',
                 'Tags': [{
                     'Key': 'Name',
-                    'Value': 'GenCyber Wireshark'
+                    'Value': 'GenCyber Wireshark/Autopsy'
                 }]
             }
         ]

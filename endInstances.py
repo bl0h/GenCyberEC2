@@ -5,7 +5,7 @@ def endInstances():
     counter = 0
     instances = ec2.instances.filter(
         Filters=[{'Name': 'instance-state-name', 'Values': ['running']},
-                 {'Name': 'tag:Name', 'Values': ['GenCyber Student Camp']} ])
+                 {'Name': 'tag:Name', 'Values': ['GenCyber Wireshark/Autopsy']} ])
     for instance in instances:
         counter += 1
         ec2.instances.filter(InstanceIds=[instance.id]).terminate()
