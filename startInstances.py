@@ -5,7 +5,7 @@ def startInstances(instances):
     ec2 = boto3.resource('ec2')
 
     newInstance = ec2.create_instances(
-        ImageId= 'ami-053bc0f72dd1878dd',
+        ImageId= 'ami-0ad1f842fc5d08829',
         MinCount= instances,
         MaxCount= instances,
         InstanceType= 't3.small',
