@@ -5,10 +5,10 @@ def startInstances(instances):
     ec2 = boto3.resource('ec2')
 
     newInstance = ec2.create_instances(
-        ImageId= 'ami-0ad1f842fc5d08829',
+        ImageId= 'ami-0c89cba549f290d34',
         MinCount= instances,
         MaxCount= instances,
-        InstanceType= 't3.small',
+        InstanceType= 't3.medium',
         KeyName = 'GenCyber 2021',
         SecurityGroupIds=['sg-0bf47b7e8e984bb9b'],
         TagSpecifications=[
